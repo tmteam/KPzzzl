@@ -12,16 +12,16 @@ class PieceLauncher(
     fun Start(){
         val pb = ProcessBuilder(config.command,config.argument)
 
-        val log = HookOutput(pb)
+        //val log = HookOutput(pb)
 
         SetEvironment(pb)
-
        // pb.directory("myDir")
         p = pb.start()
+
         //Thread.sleep(1000)
-        val logread = log.readText()
+        //val logread = log.readText()
         //val value = p!!.exitValue()
-        val isAlive = p!!.isAlive
+        //val isAlive = p!!.isAlive
     }
 
 

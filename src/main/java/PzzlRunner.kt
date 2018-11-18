@@ -7,6 +7,13 @@ class PzzlRunner(val pieces: List<PieceLauncher>) {
         return null
     }
 
+    fun get(piName: String):PieceLauncher?{
+        for (piece in pieces)
+            if(piece.config.name!!.equals(piName, ignoreCase = true)  )
+                return piece
+        return null
+    }
+
     fun runAll(){
         for(piece in pieces){
             piece.Start()
@@ -37,7 +44,7 @@ fun renderPieceTable(pieces: List<PieceLauncher>): String{
 
 
 fun rowLength(columnSize:Int, columnsCount: Int): Int{
-    return (columnSize+2)*columnsCount +1
+    return (columnSize+2)*columnsCount +2
 }
 fun StringBuilder.row(columnSize:Int,vararg args: String) {
     for (arg in args) {

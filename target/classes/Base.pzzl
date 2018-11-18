@@ -23,7 +23,7 @@ puzzles:
     argument: /Users/TT/Buff/hwfakeapp/netcorefakeapp.dll
     mode: visible
 
-  - name: MonoСlock
+  - name: MonoClock
     command: mono
     argument: /Users/TT/Buff/monoclock/monoclock.exe
     mode: visible
