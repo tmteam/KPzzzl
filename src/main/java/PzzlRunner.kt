@@ -28,7 +28,7 @@ class PzzlRunner(val pieces: List<PieceLauncher>) {
 
     fun  stopAll(){
         for(piece in pieces){
-            piece.s()
+            piece.stop()
             println("piece " + piece.config.name + " stopped")
         }
     }

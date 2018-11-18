@@ -97,8 +97,12 @@ fun tryHandleCommand(cmd:String, runner: PzzlRunner): Boolean{
         if(piece == null)
             println("\"$id\" is not valid piNum or piName")
         else {
-            println("Log of $id:")
-            println(piece.getLog())
+            println()
+            println("_".repeat(20)+ "[${piece.config.name}'s LOG ]"+"_".repeat(20))
+            println(piece.getLog()?:"")
+            println("_".repeat(20)+"[END OF ${piece.config.name}'s LOG]"+"_".repeat(20))
+            println()
+
         }
         return true
     }
@@ -114,6 +118,7 @@ private fun printHelp() {
     println("PZZL commands:")
     println("\tstart [piNum|piName] - starts piece by piNum or piName")
     println("\tstop  [piNum|piName] - stops  piece by piNum or piName")
+    println("\tlog   [piNum|piName] - show  piece output by piNum or piName")
     println("\tshow - shows current pieces state")
     println("\thelp - shows this message")
 }
