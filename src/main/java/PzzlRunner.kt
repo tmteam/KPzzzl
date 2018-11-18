@@ -16,15 +16,20 @@ class PzzlRunner(val pieces: List<PieceLauncher>) {
 
     fun runAll(){
         for(piece in pieces){
-            piece.Start()
-            System.out.println("piece " + piece.config.name +" started")
+            if(piece.config.autostart)
+            {
+                piece.Start()
+                println("piece " + piece.config.name +" started")
+            }
+            else
+                println("piece is not configured for autostart. Skip.")
         }
     }
 
     fun  stopAll(){
         for(piece in pieces){
             piece.Stop()
-            System.out.println("piece " + piece.config.name + " stopped")
+            println("piece " + piece.config.name + " stopped")
         }
     }
 

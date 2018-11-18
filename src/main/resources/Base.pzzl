@@ -24,9 +24,16 @@ puzzles:
     mode: visible
 
   - name: MonoClock
+    dir: /Users/TT/Buff/monoclock/
     command: mono
-    argument: /Users/TT/Buff/monoclock/monoclock.exe
-    mode: visible
+    argument: monoclock.exe
     environment:
         - interval: 1000
         - message: pzzl hi
+    autostart: false
+
+  - name: tsupfront
+    dir: /Users/TT/Code/Tsup/tsup/frontapp/
+    command:  ng
+    arguments:
+        - serve

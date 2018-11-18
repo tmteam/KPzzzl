@@ -89,6 +89,21 @@ fun tryHandleCommand(cmd:String, runner: PzzlRunner): Boolean{
         }
         return true
     }
+    else if(cmd.startsWith("log ")){
+        val id = cmd.removePrefix("log ").trim()
+        val idint = tryParseInt(id)
+
+        val piece =
+                if(idint==null) runner.get(id)
+                else            runner.get(idint)
+        if(piece == null)
+            println("\"$id\" is not valid piNum or piName")
+        else {
+            println("Log of $id:")
+            println(piece.getLog())
+        }
+        return true
+    }
     else if(cmd == "help"){
         printHelp()
         return true

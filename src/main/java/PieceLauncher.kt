@@ -9,19 +9,29 @@ class PieceLauncher(
     val isStarted: Boolean
         get() = if (p == null) false else p!!.isAlive
 
+    private var log: File? = null
+    fun getLog(): String {return  log!!.readText()}
     fun Start(){
-        val pb = ProcessBuilder(config.command,config.argument)
+        val argss = ArrayList<String>()
+        argss.add(config!!.command!!)
+        if(config.argument!=null)
+        argss.add(config!!.argument!!)
+        if(config.arguments!=null)
+        argss.addAll(config!!.arguments!!)
 
-        //val log = HookOutput(pb)
+        val pb = ProcessBuilder(argss)
+                /*
+                if(config.arguments!=null) ProcessBuilder(*(!!.toTypedArray()))
+                else if(config.argument==null) ProcessBuilder(config.command)
+                else ProcessBuilder(config.command ,config.argument)
+*/
+        if(config.dir!= null)
+            pb.directory(File(config.dir))
+
+        log = HookOutput(pb)
 
         SetEvironment(pb)
-       // pb.directory("myDir")
         p = pb.start()
-
-        //Thread.sleep(1000)
-        //val logread = log.readText()
-        //val value = p!!.exitValue()
-        //val isAlive = p!!.isAlive
     }
 
 
