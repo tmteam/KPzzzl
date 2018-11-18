@@ -1,20 +1,35 @@
+import kotlin.concurrent.timer
+
 fun main(args: Array<String>) {
 
     val config = PzzlReader().read()
-    val pieces = config.puzzles!!.map { c -> Piece(c) }
+    val pieces = config.puzzles!!.mapIndexed { index, c ->  PieceLauncher(c, index) }
+    val runner = PzzlRunner(pieces)
 
-    for(piece in pieces){
-        piece.Start()
-        System.out.print("piece " + piece.config.name +" started")
-    }
+    runner.runAll()
+
+    val timer = timer(
+            name = "render timer",
+            initialDelay = 0,
+            period = 1000,
+            daemon = false,
+            action = { System.out.println(renderPieceTable(runner.pieces))})
+
+    System.`in`.read()
+
+    runner.stopAll()
+
+    timer.cancel()
 
     System.`in`.read()
 
-    for(piece in pieces){
-        piece.Stop()
-        System.out.print("piece " + piece.config.name + " stopped")
-    }
 
-    System.`in`.read()
 }
+
+
+
+fun renderPieceTable(): String {
+    return ""
+}
+
 
