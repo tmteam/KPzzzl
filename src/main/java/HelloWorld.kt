@@ -1,6 +1,4 @@
-import java.io.BufferedReader
 import java.util.*
-import kotlin.concurrent.timer
 
 fun main(args: Array<String>) {
     val config = PzzlReader().read()
@@ -68,7 +66,7 @@ fun tryHandleCommand(cmd:String, runner: PzzlRunner): Boolean{
         else
         {
             println("starting the $id...")
-            piece.Start()
+            piece.start()
             println("$id was started")
         }
         return true
@@ -84,7 +82,7 @@ fun tryHandleCommand(cmd:String, runner: PzzlRunner): Boolean{
             println("\"$id\" is not valid piNum or piName")
         else {
             println("stopping the $id...")
-            piece.Stop()
+            piece.stop()
             println("$id was stopped")
         }
         return true

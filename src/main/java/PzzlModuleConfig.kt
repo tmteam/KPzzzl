@@ -8,6 +8,5 @@ class PzzlModuleConfig{
     var environment: ArrayList<LinkedHashMap<String,String>>? = null
     var autostart = true
     var dir: String? = null
-
 }
 

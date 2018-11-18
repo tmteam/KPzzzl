@@ -18,7 +18,7 @@ class PzzlRunner(val pieces: List<PieceLauncher>) {
         for(piece in pieces){
             if(piece.config.autostart)
             {
-                piece.Start()
+                piece.start()
                 println("piece " + piece.config.name +" started")
             }
             else
@@ -28,7 +28,7 @@ class PzzlRunner(val pieces: List<PieceLauncher>) {
 
     fun  stopAll(){
         for(piece in pieces){
-            piece.Stop()
+            piece.s()
             println("piece " + piece.config.name + " stopped")
         }
     }

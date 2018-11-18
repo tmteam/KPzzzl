@@ -10,8 +10,10 @@ class PieceLauncher(
         get() = if (p == null) false else p!!.isAlive
 
     private var log: File? = null
-    fun getLog(): String {return  log!!.readText()}
-    fun Start(){
+
+    fun getLog(): String { return if(log==null) "" else log!!.readText() }
+
+    fun start(){
         val argss = ArrayList<String>()
         argss.add(config!!.command!!)
         if(config.argument!=null)
@@ -20,11 +22,7 @@ class PieceLauncher(
         argss.addAll(config!!.arguments!!)
 
         val pb = ProcessBuilder(argss)
-                /*
-                if(config.arguments!=null) ProcessBuilder(*(!!.toTypedArray()))
-                else if(config.argument==null) ProcessBuilder(config.command)
-                else ProcessBuilder(config.command ,config.argument)
-*/
+
         if(config.dir!= null)
             pb.directory(File(config.dir))
 
@@ -35,7 +33,7 @@ class PieceLauncher(
     }
 
 
-    fun Stop(){
+    fun stop(){
         p?.destroy()
     }
 
