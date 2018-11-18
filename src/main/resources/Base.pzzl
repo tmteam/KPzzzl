@@ -1,0 +1,32 @@
+puzzles:
+
+#-   name: monolith
+#    command: D:\Code\plazius_core\dev\CardService\Host\iikoNet.Host.WinService\bin\Debug\iikoNet.Host.WinService.exe
+#    mode: visible
+#
+#-   name: posapiv1
+#    command: D:\Code\plazius_core\dev\PosApiV1\Plazius.PosApiV1.Host\bin\Debug\Plazius.PosApiV1.Host.exe
+#    mode: visible
+#
+#-   name: payment
+#    command: D:\Release\Payments_Payment_Service_Build_18.10.10.1351-master_artifacts (1)\build\bin\Service.Payment.Host.exe
+#    mode: visible
+#
+#-   name: posapiv2
+#    command: dotnet
+#    argument: D:\Code\plazius_core\dev\PosApiV2\Service.Api.Front.v2\bin\Debug\netcoreapp2.1\Service.Api.Front.v2.dll
+#    mode: visible
+# dotnet /Users/TT/Buff/hwfakeapp/netcorefakeapp.dll
+
+  - name: NetCoreHw
+    command: dotnet
+    argument: /Users/TT/Buff/hwfakeapp/netcorefakeapp.dll
+    mode: visible
+
+  - name: MonoСlock
+    command: mono
+    argument: /Users/TT/Buff/monoclock/monoclock.exe
+    mode: visible
+    environment:
+        - interval: 1000
+        - message: pzzl hi
