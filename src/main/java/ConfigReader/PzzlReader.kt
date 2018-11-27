@@ -5,6 +5,10 @@ import java.io.File
 import java.net.URL
 
 class PzzlReader {
+    fun readText(text:String): PzzlesConfig{
+        val reader = YamlReader(text)
+        return reader.read(PzzlesConfig::class.java)
+    }
     fun readResource(url: URL): PzzlesConfig {
         val fileContent = url.readText()
 
@@ -17,6 +21,7 @@ class PzzlReader {
                 .getResource("base.pzzl")
         return readResource(url)
     }
+
     fun read(path: String): PzzlesConfig {
         val content = File(path).readText()
 

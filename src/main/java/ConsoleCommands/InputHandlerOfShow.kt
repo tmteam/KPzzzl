@@ -4,6 +4,7 @@ import Runner.PieceLauncher
 import Runner.PzzlRunner
 import java.io.PrintStream
 
+
 class InputHandlerOfShow(
         private val runner: PzzlRunner,
         private val output: PrintStream) : IInputHandler {

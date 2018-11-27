@@ -8,3 +8,4 @@ log_of_tsupfront
 *.jar
 *.jar
 .DS_Store
+*.jar

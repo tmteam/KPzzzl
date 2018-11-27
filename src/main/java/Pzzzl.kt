@@ -3,14 +3,17 @@ import ConfigReader.PzzlesConfig
 import ConsoleCommands.*
 import Runner.PieceLauncher
 import Runner.PzzlRunner
+import java.io.File
 import java.util.*
 
 fun main(args: Array<String>) {
     var filePath = tryParsePath(args)
 
+
     val config =  DefaultResourceReader().tryLoadPzzl(filePath)
     if(config==null)
     {
+        System.out.println("Exit")
         return
     }
     val pieces = config.puzzles!!
@@ -20,7 +23,8 @@ fun main(args: Array<String>) {
     print(runner)
     println()
 
-    processUserInput(runner, Scanner(System.`in`.buffered()))
+
+    processUserInput(runner, Scanner(System.`in`.buffered()),filePath)
 }
 
 fun tryParsePath(args: Array<String>): String?{
@@ -44,7 +48,7 @@ fun tryParsePath(arg: String): String?{
     return tail
 }
 
-fun processUserInput(runner: PzzlRunner, scanner:Scanner){
+fun processUserInput(runner: PzzlRunner, scanner:Scanner, pzzlFilePath: String?){
 
 
     val handlers = LinkedList<IInputHandler>()
@@ -52,6 +56,10 @@ fun processUserInput(runner: PzzlRunner, scanner:Scanner){
     handlers.add(InputHandlerOfStop(runner, System.out))
     handlers.add(InputHandlerOfLog(runner, System.out))
     handlers.add(InputHandlerOfShow(runner, System.out))
+
+    val text = DefaultResourceReader().tryLoadPzzlAsText(pzzlFilePath)!!
+
+    handlers.add(InputHandlerOfFile(text, pzzlFilePath?:"Default pzzl", System.out))
 
     val exitCommand = InputHandlerOfExit()
     handlers.add(exitCommand)
@@ -76,22 +84,34 @@ fun processUserInput(runner: PzzlRunner, scanner:Scanner){
 }
 
 class DefaultResourceReader {
-    fun tryLoadPzzl(filePath: String?): PzzlesConfig? {
+    fun tryLoadPzzlAsText(filePath: String?): String?{
         if (filePath == null) {
             println("File path not specified. Trying to load defaults.")
             try {
-                return PzzlReader().readResource(this.javaClass.getResource("base.pzzl"))
+                return this.javaClass.getResource("base.pzzl").readText()
             }
             catch (e: Exception){
-                println("Default configuration not specified. Exit")
+                println("Default configuration not specified.")
                 return null
             }
         }
         try {
-            return PzzlReader().read(filePath!!)
+            return File(filePath).readText()
         } catch (e: Exception) {
-            println("Pzzl file \"${filePath}\" not found. Exit")
-
+            println("Pzzl file \"${filePath}\" not found. ")
+            return null
+        }
+    }
+    fun tryLoadPzzl(filePath: String?): PzzlesConfig? {
+        val text = tryLoadPzzlAsText(filePath)
+        if (text == null) {
+            println("File is empty ")
+            return null
+        }
+        try {
+            return PzzlReader().readText(text)
+        } catch (e: Exception) {
+            println("File is  not valid pzzl file")
             return null
         }
     }
