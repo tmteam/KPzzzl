@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6945812-3c3c-427e-9192-ce9941d722f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConsoleCommands/InputCommandProcessor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerForConcreteElementBase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfExit.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfHelp.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfLog.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfShow.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfStart.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfStop.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConsoleCommands/StringFormatFunctions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TryPzzzl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TryPzzzl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_of_NetCoreHw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_of_tsupfront" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConsoleCommands.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsoleCommands.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWorld.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloWorld.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PieceLauncher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner/PieceLauncher.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PzzlModuleConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConfigReader/PzzlModuleConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PzzlReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConfigReader/PzzlReader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PzzlRunner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner/PzzlRunner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PzzlesConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConfigReader/PzzlesConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Base.pzzl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Base.pzzl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HelloWorldKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HelloWorldKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/TryPzzzl.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/TryPzzzl.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PieceLauncher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PzzlModuleConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PzzlReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PzzlRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PzzlRunnerKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PzzlesConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConsoleCommands.kt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,20 +62,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfHelp.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleCommands.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -120,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfShow.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="225">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding>
                 <element signature="e#25#104#0" expanded="true" />
               </folding>
@@ -162,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/HelloWorld.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            <state relative-caret-position="210">
+              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding>
                 <element signature="n#!!block;n#processUserInput#0" />
               </folding>
@@ -243,10 +206,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ConsoleCommands/StringFormatFunctions.kt" />
         <option value="$PROJECT_DIR$/src/main/java/PieceLauncher.kt" />
         <option value="$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfShow.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/ConsoleCommands.kt" />
         <option value="$PROJECT_DIR$/src/main/java/ConfigReader/PzzlReader.kt" />
         <option value="$PROJECT_DIR$/src/main/java/HelloWorld.kt" />
         <option value="$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfHelp.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/ConsoleCommands.kt" />
       </list>
     </option>
   </component>
@@ -342,7 +305,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543309784512" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543347263707" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -407,7 +370,7 @@
     <frame x="10" y="43" width="1260" height="737" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3004926" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3004926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -416,8 +379,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3379845" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.17984496" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3379845" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.448062" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -550,30 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfShow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <element signature="e#25#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleCommands/StringFormatFunctions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleCommands.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -591,20 +530,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HelloWorld.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleCommands.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding>
-            <element signature="n#!!block;n#processUserInput#0" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="4" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfHelp.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleCommands/StringFormatFunctions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleCommands/InputHandlerOfShow.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="e#25#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HelloWorld.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!block;n#processUserInput#0" />
+          </folding>
         </state>
       </provider>
     </entry>
