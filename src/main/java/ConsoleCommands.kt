@@ -1,5 +1,7 @@
+import Runner.PzzlRunner
 
-fun handleCommand(inputCommand:String, runner: PzzlRunner): Boolean{
+
+fun handleCommandOld(inputCommand:String, runner: PzzlRunner): Boolean{
     val cmd = inputCommand.toLowerCase()
 
     if(cmd == "exit") {
@@ -90,9 +92,6 @@ fun printHelp() {
     println("\thelp - shows this message")
 }
 
-private fun print(runner: PzzlRunner) {
-    println(renderPieceTable(runner.pieces))
-}
 
 fun tryParseInt(value: String): Int?{
     try {

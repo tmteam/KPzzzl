@@ -28,7 +28,7 @@ puzzles:
     command: mono
     argument: monoclock.exe
     environment:
-        - interval: 1000
+        - interval: 100
         - message: pzzl hi
     autostart: false
 

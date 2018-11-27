@@ -1,4 +1,5 @@
-
+package Runner
+import ConfigReader.PzzlModuleConfig
 import java.io.File
 import java.io.IOException
 import java.util.*
@@ -14,7 +15,8 @@ class PieceLauncher(
 
     private var log: File? = null
 
-    fun getLog(): String? { return if(log==null) null else tail(log!!,10) }
+    fun getLog(): String? { return if(log==null) null else tail(log!!, 10)
+    }
 
     fun start(){
         val argss = ArrayList<String>()

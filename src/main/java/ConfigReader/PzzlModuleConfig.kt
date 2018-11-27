@@ -1,3 +1,5 @@
+package ConfigReader
+
 import java.util.*
 
 class PzzlModuleConfig{
