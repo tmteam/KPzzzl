@@ -11,7 +11,6 @@ fun main(args: Array<String>) {
     val config =  DefaultResourceReader().tryLoadPzzl(filePath)
     if(config==null)
     {
-        println("Pzzl file \"${filePath}\" not found. Exit")
         return
     }
     val pieces = config.puzzles!!
@@ -79,12 +78,20 @@ fun processUserInput(runner: PzzlRunner, scanner:Scanner){
 class DefaultResourceReader {
     fun tryLoadPzzl(filePath: String?): PzzlesConfig? {
         if (filePath == null) {
-            println("File path not specified. Loading defaults.")
-            return PzzlReader().readResource(this.javaClass.getResource("base.pzzl"))
+            println("File path not specified. Trying to load defaults.")
+            try {
+                return PzzlReader().readResource(this.javaClass.getResource("base.pzzl"))
+            }
+            catch (e: Exception){
+                println("Default configuration not specified. Exit")
+                return null
+            }
         }
         try {
             return PzzlReader().read(filePath!!)
         } catch (e: Exception) {
+            println("Pzzl file \"${filePath}\" not found. Exit")
+
             return null
         }
     }
