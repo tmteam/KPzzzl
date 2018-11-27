@@ -2,7 +2,6 @@ package ConsoleCommands
 
 import Runner.PieceLauncher
 import Runner.PzzlRunner
-import tryParseInt
 import java.io.PrintStream
 
 abstract class InputHandlerForConcreteElementBase(
@@ -29,5 +28,13 @@ abstract class InputHandlerForConcreteElementBase(
         if(piece == null)
             output.println( "\"$id\" is not valid piNum or piName")
         return piece
+    }
+}
+
+fun tryParseInt(value: String): Int? {
+    try {
+        return Integer.parseInt(value)
+    } catch (e: NumberFormatException) {
+        return null
     }
 }

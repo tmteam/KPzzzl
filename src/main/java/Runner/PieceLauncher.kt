@@ -20,11 +20,11 @@ class PieceLauncher(
 
     fun start(){
         val argss = ArrayList<String>()
-        argss.add(config!!.command!!)
+        argss.add(config.command!!)
         if(config.argument!=null)
-        argss.add(config!!.argument!!)
+        argss.add(config.argument!!)
         if(config.arguments!=null)
-        argss.addAll(config!!.arguments!!)
+        argss.addAll(config.arguments!!)
 
         val pb = ProcessBuilder(argss)
 
